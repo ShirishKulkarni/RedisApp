@@ -1,4 +1,4 @@
-package com.chase.hackathon.cafeteria.app.config;
+package com.pl.hackathon.redis.app.config;
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
@@ -10,7 +10,7 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
-import com.chase.hackathon.cafeteria.app.security.SimpleCORSFilter;
+import com.pl.hackathon.redis.app.security.SimpleCORSFilter;
 
 public class WebAppInitializer implements WebApplicationInitializer {
 

@@ -1,12 +1,14 @@
-package com.chase.hackathon.cafeteria.app.model;
+package com.pl.hackathon.redis.app.model;
 
-public class Item {
+import java.io.Serializable;
+
+public class Item implements Serializable {
 
 	private String name;
 
 	private String unitPrice;
 
-	private int quantity;
+	private String quantity;
 
 	public String getName() {
 		return name;
@@ -16,7 +18,7 @@ public class Item {
 		this.name = name;
 	}
 
-	public Item(String name, String unitPrice, int quantity) {
+	public Item(String name, String unitPrice, String quantity) {
 		super();
 		this.name = name;
 		this.unitPrice = unitPrice;
@@ -34,11 +36,11 @@ public class Item {
 		this.unitPrice = unitPrice;
 	}
 
-	public int getQuantity() {
+	public String getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
 
